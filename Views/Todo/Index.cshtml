@@ -28,7 +28,7 @@
                         <td>@todo.IsCompleted</td>
                         <td>
                             <a href="" class="btn btn-sm btn-success">Complete</a>
-                            <a href="" class="btn btn-sm btn-warning">Edit</a>
+                            <a asp-controller="Todo" asp-action="Edit" asp-route-id="@todo.Id" class="btn btn-sm btn-warning">Edit</a>
                             <a 
                                 asp-controller="Todo" 
                                 asp-action="Delete" 
