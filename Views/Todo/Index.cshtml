@@ -27,12 +27,22 @@
                         <td>@todo.Date</td>
                         <td>@todo.IsCompleted</td>
                         <td>
-                            <a href="" class="btn btn-sm btn-success">Complete</a>
-                            <a asp-controller="Todo" asp-action="Edit" asp-route-id="@todo.Id" class="btn btn-sm btn-warning">Edit</a>
+                            <a 
+                                asp-controller="Todo"
+                                asp-action="toComplete"
+                                asp-route-id="@todo.Id"
+                                class="btn btn-sm btn-success">Complete</a>
+
+                            <a 
+                                asp-controller="Todo" 
+                                asp-action="Edit" 
+                                asp-route-id="@todo.Id" 
+                                class="btn btn-sm btn-warning">Edit</a>
+                                
                             <a 
                                 asp-controller="Todo" 
                                 asp-action="Delete" 
-                                asp-asp-route-id="@todo.Id" 
+                                asp-route-id="@todo.Id" 
                                 class="btn btn-sm btn-danger">Remove</a>
                         </td>
                     </tr>
