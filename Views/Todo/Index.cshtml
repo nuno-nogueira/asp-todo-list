@@ -24,25 +24,37 @@
                     <tr>
                         <th scope="row">@todo.Id</th>
                         <td>@todo.Title</td>
-                        <td>@todo.Date</td>
-                        <td>@todo.IsCompleted</td>
+                        <td>@todo.Date.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            @if (todo.IsCompleted) 
+                            {
+                                <i class="text-success" data-feather="check-circle"></i>
+                            } 
+                            else 
+                            {
+                                <i class="text-danger" data-feather="x-circle"></i>
+                            }
+                           
+                        </td>
                         <td>
                             <a 
                                 asp-controller="Todo"
                                 asp-action="toComplete"
                                 asp-route-id="@todo.Id"
-                                class="btn btn-sm btn-success">Complete</a>
+                                onclick="return confirm('Are you sure you want to complete this task?')"
+                                class="btn btn-sm btn-success @(todo.IsCompleted ? "disabled" : "")">Complete</a>
 
                             <a 
                                 asp-controller="Todo" 
                                 asp-action="Edit" 
                                 asp-route-id="@todo.Id" 
-                                class="btn btn-sm btn-warning">Edit</a>
+                                class="btn btn-sm btn-warning @(todo.IsCompleted ? "disabled" : "")">Edit</a>
                                 
                             <a 
                                 asp-controller="Todo" 
                                 asp-action="Delete" 
                                 asp-route-id="@todo.Id" 
+                                onclick="return confirm('Are you sure you want to delete this task?')"
                                 class="btn btn-sm btn-danger">Remove</a>
                         </td>
                     </tr>
