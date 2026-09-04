@@ -51,12 +51,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nunon/Desktop/Programming_Languages/ASP-NET/TodoList/Views/Todo/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/nunon/Desktop/Programming_Languages/ASP-NET/TodoList/Views/Todo/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xFZGl0LmNzaHRtbA==
+[C:/Users/nunon/Desktop/Programming_Languages/ASP-NET/TodoList/Views/Todo/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nunon/Desktop/Programming_Languages/ASP-NET/TodoList/Views/Todo/Index.cshtml]
